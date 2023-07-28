@@ -72,7 +72,7 @@ function renderBoard() {
   for (let i = 0; i < size; i++) {
     for (let j = 0; j < size; j++) {
       const cell = document.createElement('input');
-      cell.type = 'text';
+      cell.type = 'number';
       cell.className = 'cell';
       cell.value = board[i][j] === 0 ? '' : board[i][j];
       cell.addEventListener('input', () => {
